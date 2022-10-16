@@ -50,7 +50,7 @@ const NFTBox: NextPage<NFTBoxProps> = ({
   xchaingeAddress,
   seller,
 }: NFTBoxProps) => {
-  console.log(xchaingeAddress)
+  console.log(`dolx address is ${xchaingeAddress}, nftaddress is ${nftAddress}`)
   const { chainId, isWeb3Enabled, account } = useMoralis()
   const [imageURI, setImageURI] = useState<string | undefined>()
   const [tokenName, setTokenName] = useState<string | undefined>()
@@ -228,4 +228,3 @@ const NFTBox: NextPage<NFTBoxProps> = ({
   )
 }
 export default NFTBox
-
